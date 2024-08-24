@@ -1,0 +1,160 @@
+:root {
+   --color--primario: #FAF0E6;
+   --color--segundario: #18122B;
+   --color--terciario: #635985;
+   --color--cuartario: #393053;
+}
+
+* {
+   background: var(--color--terciario);
+   font-family: 'inter';
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 70%;
+}
+
+.logo {
+   padding-top: 10px;
+   margin-left: 50px;
+   width: auto;
+   height: auto;
+}
+
+main {
+   display: flex;
+   margin-bottom: 50px;
+   margin-left: 80px;
+}
+
+.espacio-texto {
+   border: none;
+   color: var(--color--primario);
+   margin-top: 90px;
+   text-transform: lowercase;
+}
+
+::placeholder {
+   color: var(--color--primario);
+}
+
+.espacio-texto {
+   outline: none;
+}
+
+.espacio-lectura {
+   background: white;
+   background-image: url(/imagenes/Muñeco.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: auto;
+   color: #0A3871;
+   border-radius: 24px;
+   border: none;
+   margin-left: 98px;
+   margin-right: 100px;
+   padding-left: 20px;
+   width: 370px;
+   height: 650px;
+   position: absolute;
+   text-align: justify;
+   line-height: 1.0;
+   letter-spacing: 0.5px;
+   word-spacing: 1px;
+   text-indent: 10px; /* Ajustar el valor según necesidad */
+}
+
+.espacio-lectura:focus {
+   outline: none;
+}
+
+.botones {
+   display: flex;
+   margin-top: 18px;
+}
+
+.btn-encriptador {
+   background-color: #0A3871;
+   border: 1px solid #0A3871;
+   border-radius: 24px;
+   color: white;
+   cursor: pointer;
+   height: 67px;
+   width: 328px;
+}
+
+.btn-desencriptador {
+   background: white;
+   border: 1px solid #0A3871;
+   border-radius: 24px;
+   color: #0A3871;
+   cursor: pointer;
+   height: 67px;
+   margin-left: 30px;
+   width: 328px;
+}
+
+.btn-copiar {
+   background-color: #0A3871;
+   border: 1px solid #0A3871;
+   border-radius: 24px;
+   color: white;
+   cursor: pointer;
+   height: 67px;
+   margin-left: 127px;
+   margin-top: 580px;
+   position: absolute;
+   width: 336px;
+}
+
+.informacion {
+   color: var(--color--primario);
+   font-size: 18px;
+}
+
+/* Media Query para pantallas con ancho máximo de 1200px */
+@media (max-width: 1200px) {
+   .logo {
+       margin-left: 20px;
+       padding-top: 5px;
+       max-width: 80%;
+       height: auto;
+   }
+
+   main {
+       flex-direction: column;
+       margin-left: 20px;
+   }
+
+   .espacio-texto {
+       margin-top: 20px;
+       width: calc(100% - 40px); /* Ajusta el ancho según el padding */
+   }
+
+   .espacio-lectura {
+      margin-top: 15px;
+       margin-left: 5px;
+       margin-right: 20px;
+       width: calc(100% - 40px);
+       height: 310px; /* Ajusta la altura según el diseño */
+       position: relative;
+       padding-left: 10px;
+   }
+
+   .botones {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .btn-encriptador,
+   .btn-desencriptador,
+   .btn-copiar {
+       width: 100%;
+       max-width: 250px;
+       margin: 10px 0;
+   }
+
+   .btn-copiar {
+       margin-top: 20px;
+       position: static;
+   }
+}
