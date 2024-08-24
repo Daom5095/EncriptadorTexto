@@ -1,7 +1,7 @@
 ### 1. **Título del Proyecto**
    - **Nombre del Proyecto:** Encriptador de Texto
 
-### 2. **Descripción **
+### 2. **Descripción**
    Un encriptador de texto simple que permite encriptar y desencriptar mensajes utilizando reglas específicas. El proyecto incluye una interfaz web intuitiva y es completamente responsive.
 
 ### 3. **Características**
